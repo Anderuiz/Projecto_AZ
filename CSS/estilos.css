@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+header > h1 {
+  display: inline-block;
+}
+header > nav{
+  display: inline-block;
+  margin-left: 65%;
+}
+
+/* Estilos para el menú 
+*nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: yellow;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+/* Estilos para la imagen de fondo 
+body {
+  background-image: url("Album1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Estilos para el color de la página 
+body {
+  background-color: #1c1c1c;
+}
+
+/* Estilos para el formulario 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+input[type="submit"] {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: black;
+  color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section{
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: black;
+  color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
