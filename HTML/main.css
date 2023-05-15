@@ -1,0 +1,155 @@
+*{
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  position: fixed; /* fija el header */
+  top: 0; /* lo coloca en la parte superior */
+  left: 0; /* lo coloca en el borde izquierdo */
+  width: 100%; /* lo hace ocupar todo el ancho */
+  padding: 0px; /* agrega un poco de espacio alrededor */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 800px;
+}
+
+header h1 {
+  margin: 40px; /* elimina el margen por defecto */
+  color: yellow; /* color del título */
+  font-size: 36px; /* tamaño de la letra */
+  font-weight: bold; /* negrita */
+}
+
+.menu {
+  display: flex; /* lo convierte en un flex container */
+  justify-content: flex-end; /* alinea los enlaces al final */
+  align-items: center; /* los centra verticalmente */
+  font-size: 24px; /*tamaño de la fuente */
+}
+
+.menu a {
+  color: yellow; /* color de los enlaces */
+  font-size: 18px; /* tamaño de la letra */
+  text-decoration: none; /* quita el subrayado */
+  margin-left: 20px; /* agrega un poco de espacio entre enlaces */
+  text-transform: uppercase; /* convierte el texto en mayúsculas */
+}
+
+.menu a:hover {
+  border-bottom: 2px solid yellow; /* agrega una línea amarilla en la parte inferior al hacer hover */
+}
+
+img {
+  display: block; /* establece la imagen como un bloque para poder aplicar márgenes */
+  margin-top: 120px;
+  margin-left: 450px;
+}
+
+h2{
+  margin: 20px;
+  top: 0; /* lo coloca en la parte superior */
+  left: 0; /* lo coloca en el borde izquierdo */
+  width: 100%; /* lo hace ocupar todo el ancho */
+  color: yellow;
+  font-size: 30px; /* Establece el tamaño de fuente del título */
+  font-weight: bold; /* Establece el grosor de fuente del título */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 30px; /* Establece un margen inferior para el título */
+}
+
+p{
+  margin: 20px; /* le da um margen a los parrafos */
+  border: 10px; /* le da un borde especifico a los parrafos */
+  padding: 0%; /* agrega un poco de espacio alrededor */
+  color: rgb(192, 179, 179); /* le da color al texto */ 
+  font-size: 20px;
+}
+
+ol {
+  margin: 0 auto; /* Centra la lista horizontalmente */
+  width: 80%; /* Establece un ancho máximo para la lista */
+  max-width: 600px; /* Establece un ancho máximo para la lista */
+}
+
+li {
+  color: rgb(192, 179, 179); /* le da color al texto */ 
+  font-size: 20px; /* Establece el tamaño de fuente de los elementos de la lista */
+  margin-bottom: 10px; /* Establece un margen inferior para cada elemento de la lista */
+  padding-left: 30px; /* Agrega un espacio en blanco a la izquierda de cada elemento de la lista */
+}
+
+h3{
+  margin: 40px;
+  top: 0; /* lo coloca en la parte superior */
+  left: 0; /* lo coloca en el borde izquierdo */
+  width: 100%; /* lo hace ocupar todo el ancho */
+  color: #009688;
+  font-size: 25px; /* Establece el tamaño de fuente del título */
+  font-weight: bold; /* Establece el grosor de fuente del título */
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 20px; /* Establece un margen inferior para el título */
+}
+
+iframe {
+  display: block; /* Establece el elemento como bloque para poder aplicar el ancho y alto */
+  margin: auto; /* Centra horizontalmente el elemento */
+  width: 80%; /* Establece el ancho del elemento */
+  height: 500px; /* Establece la altura del elemento */
+}
+
+
+#contacto {
+  padding: 50px; /* espacio alrededor del contenido */
+}
+
+form {
+  display: flex; /* mostrar los elementos en línea */
+  flex-direction: column; /* apilar los elementos verticalmente */
+  max-width: 500px; /* ancho máximo del formulario */
+  margin: 0 auto; /* centrar el formulario horizontalmente */
+  color: #009688;
+}
+
+label {
+  font-weight: bold; /* hacer la etiqueta en negrita */
+  margin-bottom: 10px; /* espacio debajo de la etiqueta */
+}
+
+input,
+textarea {
+  padding: 10px; /* espacio dentro de los campos */
+  margin-bottom: 20px; /* espacio debajo de los campos */
+  border-radius: 5px; /* bordes redondeados */
+  color: #009688;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* agregar una sombra suave */
+}
+
+input[type="submit"] {
+  background-color: #009688; /* color de fondo del botón */
+  color: white; /* color de texto del botón */
+  cursor: pointer; /* cambiar el cursor cuando se pasa sobre el botón */
+}
+
+input[type="submit"]:hover {
+  background-color: #008080; /* color de fondo del botón cuando se pasa el cursor sobre él */
+}
+
+footer {
+  background-color: black; /* color de fondo del pie de página */
+  color: white; /* color de texto */
+  padding: 20px; /* espacio alrededor del contenido */
+  text-align: center; /* centrar el texto */
+}
+
+footer > h3 {
+  margin: 0; /* eliminar el margen */
+  font-size: 18px; /* tamaño de fuente */
+}
+
+h4 {
+  margin: 0; /* eliminar el margen */
+  font-size: 14px; /* tamaño de fuente */
+  margin-top: 10px; /* espacio encima del texto */
+}
