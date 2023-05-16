@@ -1,155 +1,80 @@
-*{
-  background-color: black;
+body {
+  background-image: url(./Imagenes/alcolirykoz.jpg); /* Establece la imagen de fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+  background-attachment: fixed; /* Fija la imagen de fondo en su posición original */
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo de la página */
 }
 
-header {
-  background-color: black;
-  position: fixed; /* fija el header */
-  top: 0; /* lo coloca en la parte superior */
-  left: 0; /* lo coloca en el borde izquierdo */
-  width: 100%; /* lo hace ocupar todo el ancho */
-  padding: 0px; /* agrega un poco de espacio alrededor */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 800px;
-}
-
-header h1 {
-  margin: 40px; /* elimina el margen por defecto */
-  color: yellow; /* color del título */
-  font-size: 36px; /* tamaño de la letra */
-  font-weight: bold; /* negrita */
+h1 {
+  color: yellow; /* Establece el color del texto en amarillo */
 }
 
 .menu {
-  display: flex; /* lo convierte en un flex container */
-  justify-content: flex-end; /* alinea los enlaces al final */
-  align-items: center; /* los centra verticalmente */
-  font-size: 24px; /*tamaño de la fuente */
+  position: fixed; /* Fija el menú en una posición fija */
+  top: 0; /* Ubica el menú en la parte superior del viewport */
+  right: 0; /* Ubica el menú en la parte derecha del viewport */
+  background-color: black; /* Establece un color de fondo negro para el menú */
 }
 
 .menu a {
-  color: yellow; /* color de los enlaces */
-  font-size: 18px; /* tamaño de la letra */
-  text-decoration: none; /* quita el subrayado */
-  margin-left: 20px; /* agrega un poco de espacio entre enlaces */
-  text-transform: uppercase; /* convierte el texto en mayúsculas */
+  color: yellow; /* Establece el color del texto del menú en amarillo */
 }
 
-.menu a:hover {
-  border-bottom: 2px solid yellow; /* agrega una línea amarilla en la parte inferior al hacer hover */
+@media screen and (max-width: 768px) {
+  .menu {
+    position: static; /* Cambia la posición del menú a estática */
+    background-color: transparent; /* Remueve el color de fondo en pantallas pequeñas */
+  }
 }
 
-img {
-  display: block; /* establece la imagen como un bloque para poder aplicar márgenes */
-  margin-top: 120px;
-  margin-left: 450px;
+#biografia {
+  text-align: center; /* Centra el contenido de la sección en el centro del contenedor */
+}
+
+#biografia p {
+  font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial o una fuente genérica sans-serif */
+  font-size: 16px; /* Tamaño de fuente de 16 píxeles */
+  line-height: 1.5; /* Espaciado entre líneas del 150% del tamaño de fuente */
+  text-align: center; /* Centra el texto en los párrafos */
+  margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+  color: white; /* Color de fuente en gris claro (#888) */
+}
+
+.integrantes {
+  display: flex; /* Aplica el modelo flexible (flexbox) para el contenedor de los integrantes */
+  justify-content: space-between; /* Distribuye los elementos con un espacio igual entre ellos */
+  align-items: center; /* Centra verticalmente los elementos en el contenedor */
+}
+
+.integrantes img {
+  width: 200px; /* Ancho de la imagen de 200 píxeles */
+  height: 200px; /* Altura automática para mantener la proporción de la imagen */
+  margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+}
+
+.integrantes h3 {
+  font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial o una fuente genérica sans-serif */
+  font-size: 14px; /* Tamaño de fuente de 14 píxeles */
+  font-weight: bold; /* Establece el grosor de la fuente en negrita */
+  margin: 0; /* Elimina el margen alrededor del nombre del integrante */
+  color: yellow; /* Color de fuente  */
 }
 
 h2{
-  margin: 20px;
-  top: 0; /* lo coloca en la parte superior */
-  left: 0; /* lo coloca en el borde izquierdo */
-  width: 100%; /* lo hace ocupar todo el ancho */
   color: yellow;
-  font-size: 30px; /* Establece el tamaño de fuente del título */
-  font-weight: bold; /* Establece el grosor de fuente del título */
-  text-align: center; /* Centra el texto del título */
-  margin-bottom: 30px; /* Establece un margen inferior para el título */
 }
 
-p{
-  margin: 20px; /* le da um margen a los parrafos */
-  border: 10px; /* le da un borde especifico a los parrafos */
-  padding: 0%; /* agrega un poco de espacio alrededor */
-  color: rgb(192, 179, 179); /* le da color al texto */ 
-  font-size: 20px;
+#canciones {
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  white-space: nowrap; /* Evita el salto de línea */
 }
 
-ol {
-  margin: 0 auto; /* Centra la lista horizontalmente */
-  width: 80%; /* Establece un ancho máximo para la lista */
-  max-width: 600px; /* Establece un ancho máximo para la lista */
+.video-carousel {
+  display: flex; /* Crea un contenedor flexible para los videos */
+  gap: 10px; /* Espacio entre los videos */
 }
 
-li {
-  color: rgb(192, 179, 179); /* le da color al texto */ 
-  font-size: 20px; /* Establece el tamaño de fuente de los elementos de la lista */
-  margin-bottom: 10px; /* Establece un margen inferior para cada elemento de la lista */
-  padding-left: 30px; /* Agrega un espacio en blanco a la izquierda de cada elemento de la lista */
-}
-
-h3{
-  margin: 40px;
-  top: 0; /* lo coloca en la parte superior */
-  left: 0; /* lo coloca en el borde izquierdo */
-  width: 100%; /* lo hace ocupar todo el ancho */
-  color: #009688;
-  font-size: 25px; /* Establece el tamaño de fuente del título */
-  font-weight: bold; /* Establece el grosor de fuente del título */
-  text-align: center; /* Centra el texto del título */
-  margin-bottom: 20px; /* Establece un margen inferior para el título */
-}
-
-iframe {
-  display: block; /* Establece el elemento como bloque para poder aplicar el ancho y alto */
-  margin: auto; /* Centra horizontalmente el elemento */
-  width: 80%; /* Establece el ancho del elemento */
-  height: 500px; /* Establece la altura del elemento */
-}
-
-
-#contacto {
-  padding: 50px; /* espacio alrededor del contenido */
-}
-
-form {
-  display: flex; /* mostrar los elementos en línea */
-  flex-direction: column; /* apilar los elementos verticalmente */
-  max-width: 500px; /* ancho máximo del formulario */
-  margin: 0 auto; /* centrar el formulario horizontalmente */
-  color: #009688;
-}
-
-label {
-  font-weight: bold; /* hacer la etiqueta en negrita */
-  margin-bottom: 10px; /* espacio debajo de la etiqueta */
-}
-
-input,
-textarea {
-  padding: 10px; /* espacio dentro de los campos */
-  margin-bottom: 20px; /* espacio debajo de los campos */
-  border-radius: 5px; /* bordes redondeados */
-  color: #009688;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* agregar una sombra suave */
-}
-
-input[type="submit"] {
-  background-color: #009688; /* color de fondo del botón */
-  color: white; /* color de texto del botón */
-  cursor: pointer; /* cambiar el cursor cuando se pasa sobre el botón */
-}
-
-input[type="submit"]:hover {
-  background-color: #008080; /* color de fondo del botón cuando se pasa el cursor sobre él */
-}
-
-footer {
-  background-color: black; /* color de fondo del pie de página */
-  color: white; /* color de texto */
-  padding: 20px; /* espacio alrededor del contenido */
-  text-align: center; /* centrar el texto */
-}
-
-footer > h3 {
-  margin: 0; /* eliminar el margen */
-  font-size: 18px; /* tamaño de fuente */
-}
-
-h4 {
-  margin: 0; /* eliminar el margen */
-  font-size: 14px; /* tamaño de fuente */
-  margin-top: 10px; /* espacio encima del texto */
+.video {
+  width: 300px; /* Ancho fijo para cada video */
+  height: 200px; /* Altura fija para cada video */
 }
