@@ -7,6 +7,7 @@ body {
 
 h1 {
   color: yellow; /* Establece el color del texto en amarillo */
+  margin-left: 80px;
 }
 
 .menu {
@@ -37,7 +38,7 @@ h1 {
   line-height: 1.5; /* Espaciado entre líneas del 150% del tamaño de fuente */
   text-align: center; /* Centra el texto en los párrafos */
   margin-bottom: 20px; /* Margen inferior de 20 píxeles */
-  color: white; /* Color de fuente en gris claro (#888) */
+  color: white; /* Color de fuente blanco */
 }
 
 .integrantes {
@@ -60,13 +61,18 @@ h1 {
   color: yellow; /* Color de fuente  */
 }
 
-h2{
-  color: yellow;
+h2, h3{
+  color: yellow; /* Color de fuente  */
 }
 
 #canciones {
   overflow-x: auto; /* Permite desplazamiento horizontal */
   white-space: nowrap; /* Evita el salto de línea */
+  color: yellow;
+}
+
+#canciones li{
+margin: 20;
 }
 
 .video-carousel {
@@ -77,4 +83,123 @@ h2{
 .video {
   width: 300px; /* Ancho fijo para cada video */
   height: 200px; /* Altura fija para cada video */
+}
+
+#albums {
+  font-family: Arial, sans-serif; /* Establece la fuente Arial o una fuente genérica sans-serif para la sección de álbumes */
+}
+
+#albums h2 {
+  color: yellow; /* Cambia el color de la fuente a amarillo */
+  font-size: 24px; /* Establece el tamaño de la fuente en 24 píxeles */
+  margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles */
+}
+
+#albums h3 {
+  font-size: 18px; /* Establece el tamaño de la fuente en 18 píxeles */
+  color: yellow; /* Cambia el color de la fuente a amarillo */
+  margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles */
+  margin-left: 40px; /* Agrega un margen izquierdo de 40 píxeles */
+}
+
+#albums iframe {
+  width: 400px; /* Establece el ancho del iframe en 400 píxeles */
+  height: 225px; /* Establece la altura del iframe en 225 píxeles */
+  float: right; /* Alinea el iframe a la derecha del contenedor */
+  margin-left: 20px; /* Agrega un margen izquierdo de 20 píxeles */
+}
+
+#albums ol {
+  color: white; /* Cambia el color de la fuente a blanco */
+  list-style-type: none; /* Elimina la viñeta de la lista */
+  margin-left: 60px; /* Agrega un margen izquierdo de 60 píxeles */
+  padding: 0; /* Elimina el relleno interno de la lista */
+}
+
+#albums ol li {
+  margin-bottom: 5px; /* Agrega un margen inferior de 5 píxeles entre elementos de la lista */
+}
+
+#albums ol li a {
+  color: white; /* Cambia el color de la fuente a blanco */
+  text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+}
+
+#albums p {
+  color: white; /* Cambia el color de la fuente a un tono de gris */
+  font-size: 14px; /* Establece el tamaño de la fuente en 14 píxeles */
+  margin-top: 20px; /* Agrega un margen superior de 20 píxeles */
+}
+
+#contacto {
+  display: flex; /* Utiliza el modelo flexible (flexbox) para centrar el formulario */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+  text-align: center; /* Centra el texto dentro del formulario */
+}
+
+#contacto form {
+  width: 300px; /* Establece un ancho para el formulario */
+}
+
+#contacto label {
+  display: block; /* Muestra las etiquetas en una línea separada */
+  color: white; /* Cambia el color del texto a blanco */
+  margin-bottom: 5px; /* Agrega un margen inferior de 5 píxeles entre etiquetas */
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="tel"],
+#contacto textarea {
+  width: 100%; /* Establece el ancho de los campos de entrada al 100% del contenedor */
+  padding: 5px; /* Agrega un espacio interno de 5 píxeles */
+  margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles */
+  border: 1px solid #ccc; /* Establece un borde de 1 píxel sólido de color gris claro */
+  border-radius: 3px; /* Agrega bordes redondeados de 3 píxeles */
+}
+
+#contacto textarea {
+  height: 100px; /* Establece la altura del área de texto en 100 píxeles */
+}
+
+#contacto input[type="submit"] {
+  background-color: #555; /* Establece un color de fondo para el botón de enviar */
+  color: #fff; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina el borde del botón */
+  padding: 10px 20px; /* Agrega un espacio interno de 10 píxeles en vertical y 20 píxeles en horizontal */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+#contacto input[type="submit"]:hover {
+  background-color: #777; /* Cambia el color de fondo del botón al pasar por encima */
+}
+
+footer {
+  background-color: rgb(78, 42, 42); /* Establece el color de fondo del footer como negro */
+  padding: 15px; /* Agrega un espacio de relleno de 20px alrededor del contenido del footer */
+  color: white; /* Establece el color del texto del footer como blanco */
+  display: flex; /* Establece el footer como un contenedor flexible */
+  justify-content: space-between; /* Distribuye los elementos del footer de manera equitativa a lo largo del eje principal (horizontalmente) */
+  align-items: center; /* Alinea los elementos del footer en el centro del eje transversal (verticalmente) */
+}
+
+footer h3, footer h4 {
+  margin: 0; /* Elimina el margen superior e inferior de los elementos h3 y h4 dentro del footer */
+}
+
+#redes-sociales {
+  display: flex; /* Establece el contenedor de las redes sociales como un contenedor flexible */
+  justify-content: flex-start; /* Alinea los elementos de las redes sociales hacia el inicio del contenedor (izquierda) */
+  align-items: flex-end; /* Alinea los elementos de las redes sociales en la parte inferior del contenedor */
+  gap: 10px; /* Establece un espacio de 10px entre los elementos de las redes sociales */
+}
+
+#redes-sociales a {
+  display: inline-block; /* Establece los elementos <a> como elementos en línea con un bloque de contenido */
+}
+
+#redes-sociales img {
+  width: 30px; /* Establece el ancho de las imágenes de las redes sociales en 20px */
+  height: 30px; /* Establece la altura de las imágenes de las redes sociales en 20px */
 }
